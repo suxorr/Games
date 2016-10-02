@@ -14,3 +14,11 @@ C:\Users\hrist\Desktop\Git\SnakeGame\bin\Debug\Game Over.wav
 C:\Users\hrist\Desktop\Git\SnakeGame\bin\Debug\SnakeGame.exe
 C:\Users\hrist\Desktop\Git\SnakeGame\bin\Debug\SnakeGame.pdb
 C:\Users\hrist\Desktop\Git\SnakeGame\obj\Debug\SnakeGame.csprojResolveAssemblyReference.cache
+C:\Users\hrist\Desktop\Git\Games\Snake-Game\bin\Debug\SnakeGame.exe.config
+C:\Users\hrist\Desktop\Git\Games\Snake-Game\obj\Debug\SnakeGame.exe
+C:\Users\hrist\Desktop\Git\Games\Snake-Game\obj\Debug\SnakeGame.pdb
+C:\Users\hrist\Desktop\Git\Games\Snake-Game\bin\Debug\Death.wav
+C:\Users\hrist\Desktop\Git\Games\Snake-Game\bin\Debug\Game Over.wav
+C:\Users\hrist\Desktop\Git\Games\Snake-Game\bin\Debug\SnakeGame.exe
+C:\Users\hrist\Desktop\Git\Games\Snake-Game\bin\Debug\SnakeGame.pdb
+C:\Users\hrist\Desktop\Git\Games\Snake-Game\obj\Debug\SnakeGame.csprojResolveAssemblyReference.cache

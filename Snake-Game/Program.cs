@@ -10,14 +10,8 @@ namespace SnakeGame
     {
         static void Main(string[] args)
         {
-            newProgram:
-
             GameEngine engine = new GameEngine();
             engine.Run();
-
-            
         }
     }
 }
-
-

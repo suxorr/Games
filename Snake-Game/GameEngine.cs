@@ -21,15 +21,13 @@ namespace SnakeGame
         
         private void RenderArena()
         {
-            
+            Console.Clear();
 
             if (snake.Contains(new Point(food.X, food.Y)))
             {
                 food = new Point(rnd.Next(1, 19), rnd.Next(1, 19));
             }
-
-            Console.Clear();
-
+            
             for (int i = 0; i < ArenaSize+2; i++)
             {
                 
@@ -163,15 +161,15 @@ namespace SnakeGame
 
             if (key == ConsoleKey.R)
             {
-                Console.Clear();
-                GameEngine eng = new GameEngine();
-                eng.Run();
+                snake.Clear();
+
+                //System.Diagnostics.Process.Start("SnakeGame.exe");
+                //Environment.Exit(-1);
             }
             else if (key == ConsoleKey.Escape)
             {
-                
+                Environment.Exit(-1);
             }
-            
         }
 
         public void Run()
@@ -183,7 +181,7 @@ namespace SnakeGame
             snake.Add(new Point(1, 3));
 
             Timer t = new Timer();
-            t.Timeout = 300;
+            t.Timeout = 200;
             t.Tick += new Action(MakeMove);
 
             MovementManager movementMgr = new MovementManager();
