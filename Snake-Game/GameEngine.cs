@@ -76,7 +76,7 @@ namespace SnakeGame
                         player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "Death.wav";
                         player.PlaySync();
 
-                        GetDecision();
+                        Environment.Exit(-1);
                     }
                 }
                 snake.Add(new Point(p.X, p.Y + 1));
@@ -91,7 +91,7 @@ namespace SnakeGame
                         player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "Death.wav";
                         player.PlaySync();
 
-                        GetDecision();
+                        Environment.Exit(-1);
                     }
                 }
 
@@ -107,7 +107,7 @@ namespace SnakeGame
                         player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "Death.wav";
                         player.PlaySync();
 
-                        GetDecision();
+                        Environment.Exit(-1);
                     }
                 }
 
@@ -123,7 +123,7 @@ namespace SnakeGame
                         player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "Death.wav";
                         player.PlaySync();
 
-                        GetDecision();
+                        Environment.Exit(-1);
                     }
                 }
 
@@ -143,7 +143,7 @@ namespace SnakeGame
                 player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "Death.wav";
                 player.PlaySync();
 
-                GetDecision();
+                Environment.Exit(-1);
                 
             }
             RenderArena();
@@ -152,26 +152,7 @@ namespace SnakeGame
         {
             this.direction = direction;
         }
-
-        public void GetDecision()
-        {
-            Console.Clear();
-            Console.WriteLine("You are dead tap twice R to restart or ESC to exit!");
-            var key = Console.ReadKey().Key;
-
-            if (key == ConsoleKey.R)
-            {
-                snake.Clear();
-
-                //System.Diagnostics.Process.Start("SnakeGame.exe");
-                //Environment.Exit(-1);
-            }
-            else if (key == ConsoleKey.Escape)
-            {
-                Environment.Exit(-1);
-            }
-        }
-
+        
         public void Run()
         {
             ArenaSize = 20;
